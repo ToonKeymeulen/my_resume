@@ -1,11 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Resume from './components/Resume';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Resume />
-    </div>
+    <BrowserRouter basename="/my_resume">
+      <div className="App">
+        <Resume />
+      </div>
+    </BrowserRouter>
   );
 }
 
